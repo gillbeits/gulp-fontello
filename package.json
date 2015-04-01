@@ -1,0 +1,32 @@
+{
+  "name": "gulp-fontello",
+  "version": "0.0.1",
+  "description": "Gulp wrapper for Fontello Icons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gillbeits/gulp-fontello.git"
+  },
+  "dependencies": {
+    "gulp-util": "^3.0.4",
+    "needle": "^0.9.1",
+    "path": "^0.11.14",
+    "through2": "^0.6.3",
+    "unzip": "^0.1.11"
+  },
+  "keywords": [
+    "fontello",
+    "gulp"
+  ],
+  "author": {
+    "name": "Ivan Koretskiy",
+    "email": "gillbeits@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/gillbeits/gulp-fontello/issues"
+  },
+  "homepage": "https://github.com/gillbeits/gulp-fontello"
+}
