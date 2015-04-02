@@ -26,12 +26,7 @@ function fontello () {
     }
     var self = this;
 
-    needle.post(HOST, {
-      config: {
-        file: file.path,
-        content_type: 'application/json'
-      }
-    }, { multipart: true }).pipe(through2.obj(function (file) {
+    var stream = through2.obj(function (file) {
       if (!file.toString()) {
         throw new PluginError(PLUGIN_NAME, "No session at Fontello for zip archive");
       }
@@ -61,23 +56,30 @@ function fontello () {
               switch (dirName) {
                 case 'css':
                 case 'font':
-                  self.push(new $.File({
+                  var file = new $.File({
                     cwd : "./",
                     path : entry.path,
                     contents: Buffer.concat(chunks)
-                  }));
+                  });
+                  self.push(file);
                   break;
                 default:
                   return entry.autodrain();
               }
             }
             cb()
-          }));
+          }))
+        }).on('close', function(){
+          callback()
         });
+    });
 
-      callback();
-
-    }));
+    needle.post(HOST, {
+      config: {
+        file: file.path,
+        content_type: 'application/json'
+      }
+    }, { multipart: true }).pipe(stream);
   });
 }
 
