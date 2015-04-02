@@ -74,6 +74,9 @@ function fontello () {
             cb()
           }));
         });
+
+      callback();
+
     }));
   });
 }
