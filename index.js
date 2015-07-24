@@ -53,19 +53,12 @@ function fontello () {
               fileName = path.basename(pathName);
               entry.path = fileName;
 
-              switch (dirName) {
-                case 'css':
-                case 'font':
-                  var file = new $.File({
-                    cwd : "./",
-                    path : entry.path,
-                    contents: Buffer.concat(chunks)
-                  });
-                  self.push(file);
-                  break;
-                default:
-                  return entry.autodrain();
-              }
+              var file = new $.File({
+                cwd : "./",
+                path : (dirName ? (dirName + '/') : '')+ entry.path,
+                contents: Buffer.concat(chunks)
+              });
+              self.push(file);
             }
             cb()
           }))
