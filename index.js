@@ -67,12 +67,21 @@ function fontello () {
         });
     });
 
-    needle.post(HOST, {
-      config: {
-        file: file.path,
-        content_type: 'application/json'
+    needle.post(
+      HOST,
+      {
+        config: {
+          file: file.path,
+          content_type: 'application/json'
+        }
+      },
+      { multipart: true },
+      function(error) {
+        if (error) {
+          throw error;
+        }
       }
-    }, { multipart: true }).pipe(stream);
+    ).pipe(stream);
   });
 }
 
