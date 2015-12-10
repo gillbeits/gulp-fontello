@@ -1,10 +1,10 @@
 {
   "name": "gulp-fontello",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Import svg files to Fontello icon font project, use svg filename as glyph name. Also provide task for auto download exported css and font files into desinated folder.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run example",
     "example": "gulp --gulpfile example/glyph-task.js glyph"
   },
   "repository": {
@@ -33,7 +33,9 @@
   "homepage": "https://github.com/gillbeits/gulp-fontello",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-diff": "^1.0.0",
     "gulp-load-plugins": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
     "gulp-print": "^2.0.1"
   },
   "readmeFilename": "README.md"

@@ -10,8 +10,18 @@ var
 $.fontello = require('../lib/index.js');
 
 gulp.task('glyph', function () {
+  var failed = false;
+  function onError(error) {
+    failed = true;
+  }
   return gulp.src('config.json')
+    .pipe($.plumber())
     .pipe($.fontello())
-    .pipe($.print())
+    .on('error', onError)
     .pipe(gulp.dest('dist'))
+    .on('finish', function() {
+      if (failed) {
+        throw new Error('Tests failed');
+      }
+    });
 });
