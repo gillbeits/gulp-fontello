@@ -36,7 +36,8 @@
     "gulp-diff": "^1.0.0",
     "gulp-load-plugins": "^1.1.0",
     "gulp-plumber": "^1.0.1",
-    "gulp-print": "^2.0.1"
+    "gulp-print": "^2.0.1",
+    "yargs": "^3.31.0"
   },
   "readmeFilename": "README.md"
 }

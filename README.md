@@ -15,6 +15,26 @@ Import svg files to Fontello icon font project, use svg filename as glyph name. 
 ```bash
 npm install --save-dev gulp-fontello
 ```
+## Default Zip Archive Structure
+
+<pre>
+├── LICENSE.txt
+├── README.txt
+├── config.json
+├── css
+│   ├── animation.css
+│   ├── fontello-codes.css
+│   ├── fontello-embedded.css
+│   ├── fontello-ie7-codes.css
+│   ├── fontello-ie7.css
+│   └── fontello.css
+├── demo.html
+└── font
+    ├── fontello.eot
+    ├── fontello.svg
+    ├── fontello.ttf
+    └── fontello.woff
+</pre>
 
 ## Usage
 
@@ -45,3 +65,26 @@ var options = {
   assetsOnly    :         true                        // extract from ZipFile only CSS Styles and Fonts exclude config.json, LICENSE.txt, README.txt and demo.html
 }
 ```
+
+## CLI Arguments
+
+Script can accept input parameters in CLI mode and extends options parameters in gulp task, for example:
+
+* Gulp global install
+
+```bash
+    gulp <fontello-task> --no-assets-only    
+```
+* Gulp local install (_For this make `gulp` scripts in package.json_)
+
+```bash
+    npm run gulp <fontello-task> -- --no-assets-only
+```
+
+### Available arguments
+
+* `--host=host`         Host for response
+* `--css=css`           Destination dir for Fonts and Glyphs
+* `--font=font`         Destination dir for CSS Styles
+* `--no-assets-only`    Extract from ZipFile CSS Styles and Fonts `with` config.json, LICENSE.txt, README.txt and demo.html
+* `--assets-only`       Extract from ZipFile only CSS Styles and Fonts `exclude` config.json, LICENSE.txt, README.txt and demo.html
