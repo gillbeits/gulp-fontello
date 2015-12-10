@@ -1,7 +1,7 @@
 {
   "name": "gulp-fontello",
   "version": "0.4.0",
-  "description": "Gulp wrapper for Fontello Icons",
+  "description": "Import svg files to Fontello icon font project, use svg filename as glyph name. Also provide task for auto download exported css and font files into desinated folder.",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -26,6 +26,7 @@
     "name": "Ivan Koretskiy",
     "email": "gillbeits@gmail.com"
   },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/gillbeits/gulp-fontello/issues"
   },
@@ -34,5 +35,6 @@
     "gulp": "^3.9.0",
     "gulp-load-plugins": "^1.1.0",
     "gulp-print": "^2.0.1"
-  }
+  },
+  "readmeFilename": "README.md"
 }
