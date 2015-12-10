@@ -1,21 +1,22 @@
 {
   "name": "gulp-fontello",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Gulp wrapper for Fontello Icons",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "gulp --gulpfile example/glyph-task.js glyph"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/gillbeits/gulp-fontello.git"
   },
   "dependencies": {
-    "gulp-util": "^3.0.4",
-    "needle": "^0.9.1",
-    "path": "^0.11.14",
-    "through2": "^0.6.3",
-    "unzip": "^0.1.11"
+    "gulp-util": ">=3.0",
+    "needle": ">=0.9",
+    "path": ">=0.11",
+    "through2": ">=0.6",
+    "adm-zip": ">=0.4"
   },
   "keywords": [
     "fontello",
@@ -28,5 +29,10 @@
   "bugs": {
     "url": "https://github.com/gillbeits/gulp-fontello/issues"
   },
-  "homepage": "https://github.com/gillbeits/gulp-fontello"
+  "homepage": "https://github.com/gillbeits/gulp-fontello",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-print": "^2.0.1"
+  }
 }
