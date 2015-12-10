@@ -3,6 +3,13 @@ gulp-fontello
 
 Import svg files to Fontello icon font project, use svg filename as glyph name. Also provide task for auto download exported css and font files into desinated folder.
 
+
+[![Build Status](https://david-dm.org/gillbeits/gulp-fontello.png)](https://david-dm.org/gillbeits/gulp-fontello)
+[![npm version](https://badge.fury.io/js/gulp-fontello.svg)](https://badge.fury.io/js/gulp-fontello)
+[![Build Status](https://travis-ci.org/gillbeits/gulp-fontello.png?branch=master)](https://travis-ci.org/gillbeits/gulp-fontello)
+
+[![NPM](https://nodei.co/npm/gulp-fontello.png?downloads=true)](https://nodei.co/npm/gulp-fontello/?downloads=true)
+
 ## Install
 
 ```bash
