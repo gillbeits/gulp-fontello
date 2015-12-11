@@ -6,7 +6,7 @@ Import svg files to Fontello icon font project, use svg filename as glyph name. 
 
 [![Dependencies Status](https://david-dm.org/gillbeits/gulp-fontello.png)](https://david-dm.org/gillbeits/gulp-fontello)
 [![Npm Version](https://badge.fury.io/js/gulp-fontello.svg)](https://www.npmjs.com/package/gulp-fontello)
-[![Month Downloads](https://img.shields.io/npm/dm/gulp-fontello.svg)](https://www.npmjs.com/package/gulp-fontello)
+[![Month Downloads](https://img.shields.io/npm/dm/gulp-fontello.svg)](http://npm-stat.com/charts.html?package=gulp-fontello)
 [![Build Status](https://travis-ci.org/gillbeits/gulp-fontello.png?branch=master)](https://travis-ci.org/gillbeits/gulp-fontello)
 [![Npm Licence](https://img.shields.io/npm/l/gulp-fontello.svg)](https://www.npmjs.com/package/gulp-fontello)
 
