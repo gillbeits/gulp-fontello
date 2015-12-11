@@ -16,7 +16,8 @@
     "needle": ">=0.9",
     "path": ">=0.11",
     "through2": ">=0.6",
-    "adm-zip": ">=0.4"
+    "adm-zip": ">=0.4",
+    "yargs": "^3.31.0"
   },
   "keywords": [
     "fontello",
@@ -36,8 +37,7 @@
     "gulp-diff": "^1.0.0",
     "gulp-load-plugins": "^1.1.0",
     "gulp-plumber": "^1.0.1",
-    "gulp-print": "^2.0.1",
-    "yargs": "^3.31.0"
+    "gulp-print": "^2.0.1"
   },
   "readmeFilename": "README.md"
 }
