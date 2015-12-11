@@ -1,7 +1,7 @@
 gulp-fontello
 =============
 
-Import svg files to Fontello icon font project, use svg filename as glyph name. Also provide task for auto download exported css and font files into desinated folder.
+Import svg files to Fontello icon font project, use svg filename as glyph name. Also provide task for auto download exported css and font files into destinated folder.
 
 
 [![Build Status](https://david-dm.org/gillbeits/gulp-fontello.png)](https://david-dm.org/gillbeits/gulp-fontello)
