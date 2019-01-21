@@ -67,6 +67,7 @@ var options = {
   font          :         'font',                     // Destination dir for Fonts and Glyphs
   css           :         'css',                      // Destination dir for CSS Styles,
   assetsOnly    :         true                        // extract from ZipFile only CSS Styles and Fonts exclude config.json, LICENSE.txt, README.txt and demo.html
+  cache         :         $.fontello.simpleFsCache('cachedir') // object containing methods get(key, callback) and set(key, value)
 }
 ```
 
